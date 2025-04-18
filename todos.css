@@ -1,0 +1,94 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --item-bg: #eeeeee;
+    --completed: gray;
+  }
+  
+  body.dark {
+    --bg: #181818;
+    --text: #ffffff;
+    --item-bg: #333333;
+    --completed: #888888;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .todo-container {
+    background-color: var(--bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: var(--item-bg);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: var(--completed);
+  }
+  
+  button.delete-btn,
+  button.edit-btn {
+    background-color: red;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.edit-btn {
+    background-color: orange;
+  }
+  
